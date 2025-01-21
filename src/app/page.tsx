@@ -1,11 +1,12 @@
 import Services from "./services/page";
+import Model from './model/page';
 import Image from "next/image";
 import Hero from "./Images/hero.png";
 
 export default function Home() {
   return (
     <>
-      <div id="home" className="w-full h-screen flex flex-col md:flex-row flex-1 justify-center items-center bg-black text-white p-2">
+      <div id="home" className="w-full h-screen flex flex-col md:flex-row flex-1 justify-center items-center bg-black text-white p-5">
           <div className="w-full md:w-1/2 flex justify-center items-center">
             <div className="mt-20 md:mt-0">
               <h2 className="text-4xl font-semibold">Plan Your Trip Now</h2>
@@ -18,6 +19,10 @@ export default function Home() {
           </div>
       </div>
       <Services />
+      <div className="w-full py-16 bg-black">
+        <h2 className="text-2xl text-center text-white font-bold p-4 md:p-0">Book Now! Own the road, one ride at a time</h2>
+      </div>
+      <Model />
     </>
   );
 }

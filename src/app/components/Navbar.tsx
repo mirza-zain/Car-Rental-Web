@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header id='Desktop' className='w-screen h-1/6 p-4 flex flex-1 justify-between items-center bg-transparent'>
+      <header id='Desktop' className='w-screen h-1/6 p-4 flex flex-1 justify-between items-center bg-white border-[red] border-r-0 border-l-0 border-t-0 border-b-2'>
         <Link href="/"><h1 className='font-bold text-2xl ms-5'>GEAR UP <span className='text-[red]'>|</span> RENTAL SERVICES</h1></Link>
         {mobVisible ? (
           <i className="ri-close-fill text-2xl font-bold z-50 md:hidden" onClick={toggleButton}></i>
