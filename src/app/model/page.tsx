@@ -132,6 +132,7 @@ const ModelPage = () => {
                 </tr>
               </tbody>
             </table>
+            <button title='reserve' className='w-full py-2 bg-[red] text-white hover:bg-white hover:text-black hover:border-[red]'>Reserve Now</button>
           </div>
         </div>
       </div>
