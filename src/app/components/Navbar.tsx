@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link href='/' className={`me-2 ${path === '/' ? "red" : "black"}`}>Home</Link>
           <Link href='/services' className={`me-2 ${path === '/services' ? "red" : "black"}`}>Services</Link>
           <Link href='/model'  className={`me-2 ${path === '/model' ? "red" : "black"}`}>Vehical Model</Link>
-          <button title="contact" className="px-4 py-2 border-2 border-[red]">Contact Us</button>
+          <a href='/contact' title="contact" className="px-4 py-2 border-2 border-[red] hover:bg-[red] hover:text-white">Contact Us</a>
         </div>
       </header>
       {mobVisible && (
@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link href="/" onClick={handleClick} className={`me-2 ${path === '/' ? "red" : "text-black"}`}>Home</Link>
             <Link href="/services" onClick={handleClick} className={`me-2 ${path === '/services' ? "red" : "text-black"}`}>Services</Link>
             <Link href="/model" onClick={handleClick} className={`me-2 ${path === '/model' ? "red" : "text-black"}`}>Vehical Model</Link>
-            <button title="contact" className="px-8 py-2 border-2 border-[red]">Contact Us</button>
+            <a href='/contact' title="contact" className="px-8 py-2 border-2 border-[red] hover:bg-[red] hover:text-white">Contact Us</a>
           </nav>
         </div>
       )}

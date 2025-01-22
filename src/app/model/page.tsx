@@ -65,6 +65,7 @@ const ModelPage = () => {
   return (
     <div className='w-full h-screen flex flex-col flex-1 justify-center items-center mt-3 p-2'>
       <h1 className='text-3xl font-semibold p-2 text-center '>Vehicle Models - <span className=' text-2xl font-medium'>Our rental fleet at a glance</span></h1>
+      <div id='line' className='px-36 py-0.5 bg-[red] self-center md:block hidden'></div>
       <div className='w-full flex flex-col md:flex-row justify-between items-center p-5'>
         <div className="w-2/5">
           <div className="md:hidden">
@@ -132,7 +133,7 @@ const ModelPage = () => {
                 </tr>
               </tbody>
             </table>
-            <button title='reserve' className='w-full py-2 bg-[red] text-white hover:bg-white hover:text-black hover:border-[red]'>Reserve Now</button>
+            <button title='reserve' className='w-full py-2 bg-[red] text-white hover:bg-white hover:text-black border-2 hover:border-[red]'>Reserve Now</button>
           </div>
         </div>
       </div>

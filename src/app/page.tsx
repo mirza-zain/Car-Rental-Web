@@ -1,5 +1,6 @@
 import Services from "./services/page";
 import Model from './model/page';
+import Contact from './contact/page'
 import Image from "next/image";
 import Hero from "./Images/hero.png";
 
@@ -23,6 +24,8 @@ export default function Home() {
         <h2 className="text-2xl text-center text-white font-bold p-4 md:p-0">Book Now! Own the road, one ride at a time</h2>
       </div>
       <Model />
+      <div className="w-full py-5 bg-black"></div>
+      <Contact />
     </>
   );
 }
