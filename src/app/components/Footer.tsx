@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
@@ -9,13 +10,13 @@ const Footer = () => {
         <h2 className='text-xl'>Stay In Touch With Us</h2>
         <ul className='flex justify-around'>
           <li className='text-2xl'>
-            <a href='/' title='social' className='hover:text-[red] ease-in-out duration-300'><i className="ri-github-line"></i></a>
+            <Link href='/' title='social' className='hover:text-[red] ease-in-out duration-300'><i className="ri-github-line"></i></Link>
           </li>
           <li className='text-xl'>
-            <a href='/' title='social' className='hover:text-[red] ease-in-out duration-300'><i className="ri-linkedin-fill"></i></a>
+            <Link href='/' title='social' className='hover:text-[red] ease-in-out duration-300'><i className="ri-linkedin-fill"></i></Link>
           </li>
           <li className='text-xl'>
-            <a href='/' title='social' className='hover:text-[red] ease-in-out duration-300'><i className="ri-instagram-fill"></i></a>
+            <Link href='/' title='social' className='hover:text-[red] ease-in-out duration-300'><i className="ri-instagram-fill"></i></Link>
           </li>
         </ul>
       </div>
